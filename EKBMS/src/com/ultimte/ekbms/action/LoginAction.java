@@ -1,7 +1,7 @@
-package com.ekbms.action;
+package com.ultimte.ekbms.action;
 
-import com.ekbms.dao.UserBasicDAO;
 import com.opensymphony.xwork2.ActionSupport;
+import com.ultimate.ekbms.dao.UserBasicDAO;
 
 /**
  * 

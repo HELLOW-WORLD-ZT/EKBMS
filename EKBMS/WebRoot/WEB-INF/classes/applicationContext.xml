@@ -39,13 +39,13 @@
 	</bean>
 	<tx:annotation-driven transaction-manager="transactionManager" />
 	
-	<bean id="baseDAO" class="com.ekbms.dao.BaseDAO">
+	<bean id="baseDAO" class="com.ultimate.ekbms.dao.BaseDAO">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory"/>
 		</property>
 	</bean>	
-	<bean id="userBasicDao" class="com.ekbms.idao.UserBasicDAOImpl" parent="baseDAO"/>
-	<bean id="loginAction" class="com.ekbms.action.LoginAction">
+	<bean id="userBasicDao" class="com.ultimate.ekbms.idao.UserBasicDAOImpl" parent="baseDAO"/>
+	<bean id="loginAction" class="com.ultimte.ekbms.action.LoginAction">
 	 	<property name="userDao" ref="userBasicDao"></property>
 	</bean>
 	

@@ -1,4 +1,4 @@
-package com.ekbms.util;
+package com.ultimate.ekbms.util;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

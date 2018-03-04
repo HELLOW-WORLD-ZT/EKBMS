@@ -1,10 +1,10 @@
-package com.ekbms.idao;
+package com.ultimate.ekbms.idao;
 
 import org.hibernate.Query;
 import org.hibernate.Session;
 
-import com.ekbms.dao.BaseDAO;
-import com.ekbms.dao.UserBasicDAO;
+import com.ultimate.ekbms.dao.BaseDAO;
+import com.ultimate.ekbms.dao.UserBasicDAO;
 /**
  * 
  * @info  

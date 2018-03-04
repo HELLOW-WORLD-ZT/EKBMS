@@ -1,4 +1,4 @@
-package com.ekbms.dto;
+package com.ultimate.ekbms.dto;
 
 /**
  * UserBasic entity. @author MyEclipse Persistence Tools

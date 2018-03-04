@@ -1,4 +1,4 @@
-package com.ekbms.dao;
+package com.ultimate.ekbms.dao;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
