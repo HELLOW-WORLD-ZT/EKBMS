@@ -3,6 +3,13 @@ package com.ekbms.action;
 import com.ekbms.dao.UserBasicDAO;
 import com.opensymphony.xwork2.ActionSupport;
 
+/**
+ * 
+ * @info  
+ * @date 2018年3月4日 下午3:05:51
+ * @author 肖鹏
+ *
+ */
 public class LoginAction extends ActionSupport{
 
 	private static final long serialVersionUID = 1L;
@@ -10,8 +17,8 @@ public class LoginAction extends ActionSupport{
 	private String password;
 	private UserBasicDAO userDao;
 	
+	@Override
 	public String execute() throws Exception {
-		//System.out.println(account + ":" + password);
 		if(userDao.login(account, password)){
 			return SUCCESS;
 		} else {

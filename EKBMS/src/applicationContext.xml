@@ -44,7 +44,7 @@
 			<ref bean="sessionFactory"/>
 		</property>
 	</bean>	
-	<bean id="userBasicDao" class="com.ekbms.idao.UserBasicDAOImp" parent="baseDAO"/>
+	<bean id="userBasicDao" class="com.ekbms.idao.UserBasicDAOImpl" parent="baseDAO"/>
 	<bean id="loginAction" class="com.ekbms.action.LoginAction">
 	 	<property name="userDao" ref="userBasicDao"></property>
 	</bean>

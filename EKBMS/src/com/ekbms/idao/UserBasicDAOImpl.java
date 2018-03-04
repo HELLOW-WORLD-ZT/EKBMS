@@ -5,9 +5,16 @@ import org.hibernate.Session;
 
 import com.ekbms.dao.BaseDAO;
 import com.ekbms.dao.UserBasicDAO;
+/**
+ * 
+ * @info  
+ * @date 2018年3月4日 下午3:05:12
+ * @author 肖鹏
+ *
+ */
+public class UserBasicDAOImpl extends BaseDAO implements UserBasicDAO{
 
-public class UserBasicDAOImp extends BaseDAO implements UserBasicDAO{
-
+	@Override
 	public boolean login(String account, String password){
 		Session session = getSession();
 		String hql="from UserBasic where account = ? and password = ?";
