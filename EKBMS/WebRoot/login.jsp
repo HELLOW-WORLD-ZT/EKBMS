@@ -40,15 +40,15 @@
 					
 
 					<!-- Start Sign In Form -->
-					<form action="#" class="fh5co-form animate-box" data-animate-effect="fadeInLeft">
+					<form action="loginAction" method="post" class="fh5co-form animate-box" data-animate-effect="fadeInLeft">
 						<h2>企业知识库</h2>
 						<div class="form-group">
 							<label for="username" class="sr-only">Username</label>
-							<input type="text" class="form-control" id="username" placeholder="输入工号" autocomplete="off">
+							<input name="account" type="text" class="form-control" id="username" placeholder="输入工号" autocomplete="off">
 						</div>
 						<div class="form-group">
 							<label for="password" class="sr-only">Password</label>
-							<input type="password" class="form-control" id="password" placeholder="输入密码" autocomplete="off">
+							<input name="password" type="password" class="form-control" id="password" placeholder="输入密码" autocomplete="off">
 						</div>
 						<div class="form-group">
 							<label for="remember"><input type="checkbox" id="remember"> 记住我 </label>

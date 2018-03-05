@@ -1,17 +1,13 @@
 package com.ultimate.ekbms.dto;
 
 /**
- * UserBasic entity. @author MyEclipse Persistence Tools
+ * UserBasicInfo entity. @author MyEclipse Persistence Tools
  */
 
-public class UserBasic implements java.io.Serializable {
+public class UserBasicInfo implements java.io.Serializable {
 
 	// Fields
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private Integer id;
 	private String account;
 	private String password;
@@ -20,11 +16,11 @@ public class UserBasic implements java.io.Serializable {
 	// Constructors
 
 	/** default constructor */
-	public UserBasic() {
+	public UserBasicInfo() {
 	}
 
 	/** full constructor */
-	public UserBasic(String account, String password, String role) {
+	public UserBasicInfo(String account, String password, String role) {
 		this.account = account;
 		this.password = password;
 		this.role = role;

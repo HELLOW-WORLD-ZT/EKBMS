@@ -31,22 +31,23 @@
 		</property>
 		<property name="mappingResources">
 			<list>
-				<value>com/ekbms/dto/UserBasic.hbm.xml</value></list>
+				<value>
+					com/ultimate/ekbms/dto/UserBasicInfo.hbm.xml
+				</value></list>
 		</property></bean>
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 	<tx:annotation-driven transaction-manager="transactionManager" />
-	
 	<bean id="baseDAO" class="com.ultimate.ekbms.dao.BaseDAO">
-		<property name="sessionFactory">
-			<ref bean="sessionFactory"/>
-		</property>
-	</bean>	
-	<bean id="userBasicDao" class="com.ultimate.ekbms.idao.UserBasicDAOImpl" parent="baseDAO"/>
-	<bean id="loginAction" class="com.ultimte.ekbms.action.LoginAction">
-	 	<property name="userDao" ref="userBasicDao"></property>
+        <property name="sessionFactory">
+            <ref bean="sessionFactory"/>
+        </property>
+    </bean> 
+	<bean id="userBasicInfoDAO" class="com.ultimate.ekbms.dao.UserBasicInfoDAOImpl" parent="baseDAO"/>
+	<bean id="loginAction" class="com.ultimate.ekbms.action.LoginAction">
+		<property name="dao" ref="userBasicInfoDAO"></property>
 	</bean>
 	
 </beans>
