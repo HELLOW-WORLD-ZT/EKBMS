@@ -27,13 +27,74 @@
 				<prop key="hibernate.dialect">
 					org.hibernate.dialect.MySQLDialect
 				</prop>
+				<!-- show_sql目的是打印sql语句 -->  
+                <prop key="hibernate.show_sql">true</prop>  
+                <!-- 美化SQL的打印格式 -->  
+                <prop key="hibernate.format_sql">true</prop> 
 			</props>
 		</property>
 		<property name="mappingResources">
 			<list>
-				<value>
-					com/ultimate/ekbms/dto/UserBasicInfo.hbm.xml
-				</value></list>
+			<value>
+				com/ultimate/ekbms/dto/MessageRewardInfo.hbm.xml
+			</value>
+			<value>
+				com/ultimate/ekbms/dto/FilePowerControl.hbm.xml
+			</value>
+			<value>com/ultimate/ekbms/dto/FileBrowse.hbm.xml</value>
+			<value>com/ultimate/ekbms/dto/FileDetailInfo.hbm.xml</value>
+			<value>
+				com/ultimate/ekbms/dto/UserFileDirectoryFile.hbm.xml
+			</value>
+			<value>com/ultimate/ekbms/dto/FileCollection.hbm.xml</value>
+			<value>
+				com/ultimate/ekbms/dto/LearningPathInfo.hbm.xml
+			</value>
+			<value>com/ultimate/ekbms/dto/FileExamine.hbm.xml</value>
+			<value>
+				com/ultimate/ekbms/dto/StructureDetailInfo.hbm.xml
+			</value>
+			<value>com/ultimate/ekbms/dto/Classification.hbm.xml</value>
+			<value>
+				com/ultimate/ekbms/dto/LearningPathFileStudyRecored.hbm.xml
+			</value>
+			<value>
+				com/ultimate/ekbms/dto/LearningPathChoose.hbm.xml
+			</value>
+			<value>
+				com/ultimate/ekbms/dto/MessageRewardReply.hbm.xml
+			</value>
+			<value>com/ultimate/ekbms/dto/Department.hbm.xml</value>
+			<value>com/ultimate/ekbms/dto/UserBasicInfo.hbm.xml</value>
+			<value>
+				com/ultimate/ekbms/dto/LearningPathPraise.hbm.xml
+			</value>
+			<value>
+				com/ultimate/ekbms/dto/LearningPathRemark.hbm.xml
+			</value>
+			<value>
+				com/ultimate/ekbms/dto/StructurePraise.hbm.xml
+			</value>
+			<value>com/ultimate/ekbms/dto/FileRemark.hbm.xml</value>
+			<value>
+				com/ultimate/ekbms/dto/StructureRemark.hbm.xml
+			</value>
+			<value>
+				com/ultimate/ekbms/dto/StructureDelete.hbm.xml
+			</value>
+			<value>com/ultimate/ekbms/dto/FilePraise.hbm.xml</value>
+			<value>com/ultimate/ekbms/dto/FileDownload.hbm.xml</value>
+			<value>
+				com/ultimate/ekbms/dto/StructureConcern.hbm.xml
+			</value>
+			<value>com/ultimate/ekbms/dto/UserDetailInfo.hbm.xml</value>
+			<value>com/ultimate/ekbms/dto/FileDelete.hbm.xml</value>
+			<value>
+				com/ultimate/ekbms/dto/LearningPathDelete.hbm.xml
+			</value>
+			<value>
+				com/ultimate/ekbms/dto/UserStorageDirectory.hbm.xml
+			</value></list>
 		</property></bean>
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate4.HibernateTransactionManager">

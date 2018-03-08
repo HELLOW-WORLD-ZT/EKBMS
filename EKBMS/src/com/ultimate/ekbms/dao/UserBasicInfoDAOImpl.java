@@ -28,9 +28,9 @@ public class UserBasicInfoDAOImpl extends BaseDAO implements UserBasicInfoDAO{
 			user= (UserBasicInfo)query.uniqueResult();
 		}catch(Exception e){
 			e.printStackTrace();
+		}finally{
+			closeSession(session);
 		}
-		
-		
 		return user;
 	}
 

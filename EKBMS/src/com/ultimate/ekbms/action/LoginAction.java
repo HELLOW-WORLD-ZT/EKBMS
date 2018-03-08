@@ -20,7 +20,7 @@ public class LoginAction extends ActionSupport{
 		if(user!=null){
 			Map<String,Object> session = ActionContext.getContext().getSession();
 			session.put("UID",user.getId());
-			System.out.println("登录成功");
+			//System.out.println("登录成功");
 			return SUCCESS;
 		}
 		return ERROR;

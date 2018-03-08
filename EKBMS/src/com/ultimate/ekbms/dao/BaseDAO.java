@@ -23,5 +23,9 @@ public class BaseDAO {
     public void setSessionFactory(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
-
+    public void closeSession(Session session){
+    	if(session!=null){
+    		session.close();
+    	}
+    }
 }

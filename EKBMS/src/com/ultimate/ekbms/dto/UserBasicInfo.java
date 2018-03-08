@@ -12,7 +12,7 @@ public class UserBasicInfo implements java.io.Serializable {
 	private String account;
 	private String password;
 	private String role;
-
+	private UserDetailInfo userDetailInfo;
 	// Constructors
 
 	/** default constructor */
@@ -60,4 +60,12 @@ public class UserBasicInfo implements java.io.Serializable {
 		this.role = role;
 	}
 
+	public UserDetailInfo getUserDetailInfo() {
+		return userDetailInfo;
+	}
+
+	public void setUserDetailInfo(UserDetailInfo userDetailInfo) {
+		this.userDetailInfo = userDetailInfo;
+	}
+    
 }
