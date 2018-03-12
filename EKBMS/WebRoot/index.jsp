@@ -8,9 +8,16 @@
 		<title> 企业知识库 - 首页 </title>
 		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/home.css" rel="stylesheet" />
+		<script type="text/javascript">
+			function init(){
+				$.get("loadUserInfoAction",function(data,status){})
+				alert(data);
+				return false;
+			}
+		</script>
 	</head>
 
-	<body>
+	<body onload="init()">
 		<s:include value="head.jsp"></s:include>
 		<!-- banner -->
 		<div id="myCarousel" class="carousel slide">

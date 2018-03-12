@@ -6,8 +6,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd" xmlns:tx="http://www.springframework.org/schema/tx">
 
 	
-	
-	
 	<bean id="dataSource"
 		class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="url"
@@ -110,5 +108,8 @@
 	<bean id="loginAction" class="com.ultimate.ekbms.action.LoginAction">
 		<property name="dao" ref="userBasicInfoDAO"></property>
 	</bean>
-	
+	<bean id="userDetailInfoDAO" class="com.ultimate.ekbms.dao.UserDetailInfoDAOImpl" parent="baseDAO"></bean>
+	<bean id="userDetailInfoAction" class="com.ultimate.ekbms.action.UserDetailInfoAction">
+		<property name="dao" ref="userDetailInfoDAO"></property>
+	</bean>	
 </beans>

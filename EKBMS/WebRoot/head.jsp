@@ -1,7 +1,11 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
-
-		<nav class="navbar navbar-inverse" role="navigation" style="border-radius :0px; background-color: rgba(63,63,63,1); margin: 0">
+<head>
+	<title> 导航栏 </title>
+</head>
+<body>
+		<nav onload="init()" class="navbar navbar-inverse" role="navigation" style="border-radius :0px; background-color: rgba(63,63,63,1); margin: 0">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#"><img src="img/loo.png" style="height:30px; width: auto;"></a>
@@ -51,7 +55,7 @@
 						</li>
 						<li>
 							<a href="#" style="font-size: 14px; color: darkgray; padding-left: 10px; " class="dropdown-toggle" data-toggle="dropdown">
-								曾祥<b class="caret"></b>
+								<s:property value="userDetailInfo.realName"/> <b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" style="min-width: 100%;">
 								<li>
@@ -69,7 +73,7 @@
 				</div>
 			</div>
 		</nav>
-		
+	</body>
 		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
 		<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
