@@ -33,5 +33,8 @@ public class UserBasicInfoDAOImpl extends BaseDAO implements UserBasicInfoDAO{
 		}
 		return user;
 	}
-
+	public static void main(String[] args) {
+		UserBasicInfoDAOImpl dao = new UserBasicInfoDAOImpl();
+		dao.login("1001", "123456");
+	}
 }

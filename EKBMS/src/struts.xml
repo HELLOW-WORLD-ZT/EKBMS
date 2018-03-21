@@ -8,11 +8,17 @@
 			<result name="success">/index.jsp</result>
 			<result name="error">/login.jsp</result>
 		</action>
+		
 		<action name="loadUserInfoAction" class="userDetailInfoAction" method="getUserDetailInfoById">
 			<result name="success" type="stream">  
 	            <param name="contentType">text/html; charset=utf-8</param>  
 	            <param name="inputName">inputStream</param>
 	        </result>  
+		</action>
+		
+		<action name="searchAction" class="searchAction">
+			<result name="success">/search.jsp</result>
+			<result name="error">/error.jsp</result>
 		</action>
 	</package>
 </struts>    

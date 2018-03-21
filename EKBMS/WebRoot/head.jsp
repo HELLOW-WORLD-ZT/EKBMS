@@ -39,9 +39,10 @@
 					<!-- 向右对齐 -->
 					<ul class="nav navbar-nav navbar-right">
 						<!-- 搜索框  -->
-						<form class="navbar-form navbar-left" role="search">
+						<form class="navbar-form navbar-left" role="search" action="searchAction" method="post">
 							<div class="input-group">
-								<input type="text" class="form-control" style="border-radius :0px;" placeholder="输入关键字搜索..." />
+								<input name="query" type="text" class="form-control" style="border-radius :0px;" placeholder="输入关键字搜索..." />
+								<a href="searchAction?query='智能'">我去</a>
 								<span class="input-group-btn">
 									<button class="btn btn-default" type="submit" style="border-radius :0px;">
 										<span class="glyphicon glyphicon-search" style="color: dodgerblue;"></span>

@@ -23,6 +23,7 @@ public class FileDetailInfo implements java.io.Serializable {
 	private Double size;
 	private Timestamp uploadTime;
 	private String path;
+	
 	private Set fileRemarks = new HashSet(0);
 	private Set fileBrowses = new HashSet(0);
 	private Set fileDownloads = new HashSet(0);
@@ -67,6 +68,12 @@ public class FileDetailInfo implements java.io.Serializable {
 	}
 
 	// Property accessors
+
+	
+
+	public FileDetailInfo(String name2, String parserFile) {
+		// TODO Auto-generated constructor stub
+	}
 
 	public Integer getId() {
 		return this.id;

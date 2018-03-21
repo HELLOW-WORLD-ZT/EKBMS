@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Java JDK VM 1.8.0_v112 Windows">
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
@@ -37,6 +36,16 @@
 			<attribute name="owner.project.facets" value="me.hibernate"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/mysql-connector-java-5.1.45-bin.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="E:/服务外包/开发环境/mysql-connector-java-5.1.45-bin.jar"/>
+	<classpathentry kind="lib" path="E:/lucene源码/全文检索实战源代码/chapter3/filesearch/WebContent/WEB-INF/lib/IKAnalyzer2012_u6.jar"/>
+	<classpathentry kind="lib" path="E:/lucene源码/全文检索实战源代码/chapter3/filesearch/WebContent/WEB-INF/lib/lucene-analyzers-common-6.0.0.jar"/>
+	<classpathentry kind="lib" path="E:/lucene源码/全文检索实战源代码/chapter3/filesearch/WebContent/WEB-INF/lib/lucene-analyzers-smartcn-6.0.0.jar"/>
+	<classpathentry kind="lib" path="E:/lucene源码/全文检索实战源代码/chapter3/filesearch/WebContent/WEB-INF/lib/lucene-core-6.0.0.jar"/>
+	<classpathentry kind="lib" path="E:/lucene源码/全文检索实战源代码/chapter3/filesearch/WebContent/WEB-INF/lib/lucene-highlighter-6.0.0.jar"/>
+	<classpathentry kind="lib" path="E:/lucene源码/全文检索实战源代码/chapter3/filesearch/WebContent/WEB-INF/lib/lucene-memory-6.0.0.jar"/>
+	<classpathentry kind="lib" path="E:/lucene源码/全文检索实战源代码/chapter3/filesearch/WebContent/WEB-INF/lib/lucene-queries-6.0.0.jar"/>
+	<classpathentry kind="lib" path="E:/lucene源码/全文检索实战源代码/chapter3/filesearch/WebContent/WEB-INF/lib/lucene-queryparser-6.0.0.jar"/>
+	<classpathentry kind="lib" path="E:/lucene源码/全文检索实战源代码/chapter3/filesearch/WebContent/WEB-INF/lib/tika-app-1.13.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
